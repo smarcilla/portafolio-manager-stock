@@ -1,7 +1,7 @@
-<h2>{{stock.name | uppercase}} Details</h2>
-<div><span>Id: </span>{{stock.id}}</div>
-<div>
-  <label>Name: <input [(ngModel)]="stock.name" placeholder="name"></label>
-</div>
-<div><span>Last Quote: </span>{{stock.lastQuote}}</div>
-<div><span>Last Date Quote: </span>{{stock.lastDateQuote}}</div>
+<h2>My Stocks</h2>
+<ul class='stocks'>
+  <li *ngFor="let stock of stocks">
+    <span class="badge">{{stock.id}}</span> {{stock.name}}
+  </li>
+</ul>
+

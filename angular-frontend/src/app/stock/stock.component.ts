@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {Stock} from '../stock';
+import { Stock } from '../stock';
+import { STOCKS } from '../mock-stocks';
 
 @Component({
   selector: 'app-stock',
@@ -14,6 +15,8 @@ export class StockComponent implements OnInit {
     lastDateQuote: new Date(),
     lastQuote: 14.23
   };
+
+  stocks = STOCKS;
 
   constructor() { }
 

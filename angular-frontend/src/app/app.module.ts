@@ -5,12 +5,14 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { StockComponent } from './stock/stock.component';
+import { StockDetailComponent } from './stock-detail/stock-detail.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    StockComponent
+    StockComponent,
+    StockDetailComponent
   ],
   imports: [
     BrowserModule,

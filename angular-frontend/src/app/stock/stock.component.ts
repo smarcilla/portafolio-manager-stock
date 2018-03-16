@@ -18,9 +18,15 @@ export class StockComponent implements OnInit {
 
   stocks = STOCKS;
 
+  selectedStock: Stock;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onSelect(stock: Stock): void {
+    this.selectedStock = stock;
   }
 
 }
